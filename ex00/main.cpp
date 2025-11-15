@@ -2,7 +2,7 @@
 
 int main() {
     Zombie* z = newZombie("Ares");
-    z->annouce();
+    z->announce();
     delete z;
 
     randomChump("malik");
