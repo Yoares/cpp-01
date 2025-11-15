@@ -10,10 +10,14 @@ class Zombie {
     public:
         Zombie(std::string n) : name(n){};
         ~Zombie(){std::cout << name << " is destroyed "; };
-        void annouce() const{ std::cout << name << ": BraiiiiiiinnnzzzZ...\n"; }
+        Zombie();
+        ~Zombie();
+        void annouce() const ;
+        void set_name(const std::string& name);
 };
 
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
+Zombie* zombieHorde( int N, std::string name );
 
 #endif // ZOMBIE_HPP
