@@ -12,3 +12,4 @@ class HumanB {
         void attack() const;
 };
 #endif
+
